@@ -17,8 +17,9 @@ var cSearchData = cSearchData||{};
 		
 		// dataUrl	---	URL used for requesting data. 
 		var dataUrl =  "https://restcountries.eu/rest/v2/name/{%}";
-		var Debug = false;
+		var Debug = true;
 		var lastRequestedData = [];
+		var last_request;
 		
 		var options = $.extend({
 		// styleUrl	---	external style sheet for desinging component
@@ -172,7 +173,8 @@ var cSearchData = cSearchData||{};
 				draw_results(element,options.cachedData[val]);
 				return;
 			}else{
-				$.ajax({
+				if(last_request)last_request.abort();
+				last_request = $.ajax({
 					method	: 	"GET",
 					url 	: 	url,
 					success : 	function(data){
