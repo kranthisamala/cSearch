@@ -4,7 +4,7 @@
 			limit:5,
 			enableCache:true,
 			filter:function(value,data){
-				return data.name.indexOf(value)>-1;
+				return data.name.toLowerCase().indexOf(value) == 0; //Countries strictly starting with entered value
 			},
 			selectedCountry:function(data){
 				console.log("selected country",data);
