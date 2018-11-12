@@ -7,6 +7,7 @@ This would create cSearch component with all ***default*** settings.
 ```
 $("div").cSearch();
 ```
+-----------------
 
 If you want to alter the default settings
 ### Example 2
