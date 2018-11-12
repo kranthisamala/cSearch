@@ -17,7 +17,7 @@ var cSearchData = cSearchData||{};
 		
 		// dataUrl	---	URL used for requesting data. 
 		var dataUrl =  "https://restcountries.eu/rest/v2/name/{%}";
-		var Debug = true;
+		var Debug = false;
 		var lastRequestedData = [];
 		var last_request;
 		
