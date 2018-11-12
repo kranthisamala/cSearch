@@ -1,0 +1,54 @@
+
+/*This is a template to create css for different themes */
+@inputBackground:#222222;
+@inputTxtColor:#cccccc;
+@selectedEleBackground:#cccccc;
+@selectedEleTxtColor:#222222;
+@unselectedEleBackground:#222222;
+@unselectedEleTxtColor:#cccccc;
+@borderTop:rgba(204,204,204,0.2);
+.dark-theme[csSearch_wrap]{
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+position:relative;
+[cSearch_input],[cSearch_elements],[csearch_results]{
+  margin:0px;
+  padding:0px;
+}
+[csearch_wrap_input]{
+  display:block;
+  padding:10px 10px;
+  background-color:@inputBackground;
+}
+[cSearch_results]{
+  position:absolute;
+  z-index:9999;
+  width:100%;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+[cSearch_input]{
+  border:none;
+  outline:none;
+  display:block;
+  width:100%;
+  background-color: @inputBackground;
+  color:@inputTxtColor;
+}
+[cSearch_elements]{
+  background-color:@unselectedEleBackground;
+  color:@unselectedEleTxtColor;
+  font-size:13px;
+  font-weight:bold;
+  font-family:sans-serif;
+  list-style-type:none;
+  cursor:pointer;
+  padding:5px 5px 5px 10px;
+}
+[cSearch_elements]:first-child{
+  border-top:1px solid @borderTop;
+}
+[cSearch_elements].selected{
+  background-color:@selectedEleBackground;
+  color:@selectedEleTxtColor;
+}
+}

@@ -1,0 +1,101 @@
+
+/*Light-theme*/
+.light-theme[csSearch_wrap] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.light-theme[csSearch_wrap] [cSearch_input],
+.light-theme[csSearch_wrap] [cSearch_elements],
+.light-theme[csSearch_wrap] [csearch_results] {
+  margin: 0px;
+  padding: 0px;
+}
+.light-theme[csSearch_wrap] [csearch_wrap_input] {
+  display: block;
+  padding: 10px 10px;
+  background-color: #ffffff;
+}
+.light-theme[csSearch_wrap] [cSearch_results] {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+.light-theme[csSearch_wrap] [cSearch_input] {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+}
+.light-theme[csSearch_wrap] [cSearch_elements] {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: sans-serif;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 5px 5px 5px 10px;
+}
+.light-theme[csSearch_wrap] [cSearch_elements]:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.light-theme[csSearch_wrap] [cSearch_elements].selected {
+  background-color: #4b88dc;
+  color: #ffffff;
+}
+
+
+
+/*Dark-theme*/
+
+.dark-theme[csSearch_wrap] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.dark-theme[csSearch_wrap] [cSearch_input],
+.dark-theme[csSearch_wrap] [cSearch_elements],
+.dark-theme[csSearch_wrap] [csearch_results] {
+  margin: 0px;
+  padding: 0px;
+}
+.dark-theme[csSearch_wrap] [csearch_wrap_input] {
+  display: block;
+  padding: 10px 10px;
+  background-color: #222222;
+}
+.dark-theme[csSearch_wrap] [cSearch_results] {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+.dark-theme[csSearch_wrap] [cSearch_input] {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  background-color: #222222;
+  color: #cccccc;
+}
+.dark-theme[csSearch_wrap] [cSearch_elements] {
+  background-color: #222222;
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: sans-serif;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 5px 5px 5px 10px;
+}
+.dark-theme[csSearch_wrap] [cSearch_elements]:first-child {
+  border-top: 1px solid rgba(204, 204, 204, 0.2);
+}
+.dark-theme[csSearch_wrap] [cSearch_elements].selected {
+  background-color: #cccccc;
+  color: #222222;
+}
