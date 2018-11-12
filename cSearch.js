@@ -156,7 +156,7 @@ var cSearchData = cSearchData||{};
 		var request_data_and_Draw = function(element){
 			$this = $(element).find(INPUT_ELE_SELECTOR);
 			
-			let val = $this.val().trim();
+			let val = $this.val().trim().toLowerCase();
 			if(val.length < options.minLen){
 				close_autoComplete(element);
 				return;
