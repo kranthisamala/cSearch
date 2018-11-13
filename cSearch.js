@@ -190,8 +190,8 @@ var cSearchData = cSearchData||{};
 						}
 						draw_results(element,data);
 					},
-					error 	: 	function(){
-						if(options.enableCache){
+					error 	: 	function(data){
+						if(data.status != 0 && options.enableCache){
 							options.cachedData[val] = [];
 						}
 						draw_results(element,[]);
